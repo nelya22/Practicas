@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tarjeta de
+         presentacion(CV)
+        </title>
+    </head>
+    <body>
+        
+     <header class="base">
+         <h1 class="titulos">
+         Aylen.R.Barrios</h1>
+         <h2 class="titulos">
+         curriculum vitae</h2>
+     </header>
+     
+     <div>
+     <section id="ed" class="base">
+      <b>Formación/
+      educacion:</b></br>
+         Titulo primario y secundario(en proceso) en la Parroquia Sagrada Familia
+         </br>
+         Titulo de ingles(en proceso) en Get Ahead
+     </section>
+    
+    <section id="datosP" class="base">
+      <b>Datos personales:</b></br>
+      🏡Dirección:
+      Florencio.Sxx</br>
+      📩Gmail:
+      aylu45@gmail
+      .com</br>
+      📞Numero:
+      4785992xxx.
+    </section>
+    </div>
+    
+    <section id="exp" class="base">
+      <b>Experiencia laboral:</b></br>
+        Recien graduada y lista para 
+        trabajar😸👷🏻‍♀️
+    </section>
+    
+    </body>
+</html>
+
+Apartado CSS:
+body {
+/*↓gradiente 'morado espacial'*/
+    background: linear-gradient(
+    45deg, 
+    #0c0a1a 0%, 
+    #1e1b4b 30%, 
+    #4338ca 70%, 
+    #8b5cf6 100%);        
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease 
+    infinite;
+    margin: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.base{
+    color:#ffffff;
+    background:linear-gradient(
+        90deg,
+        #B0E5FF 0%,
+        #91D9FF 30%,
+        #4FCAFF 70%,
+        #2AB5FA 100%);
+    background-size:200% 100%;
+    animation: gradientShift 6s ease 
+    infinite;
+    border-radius:15px;
+    box-shadow:10px 10px 20px rgba(0, 0, 
+    0, 0.3);
+    padding: 20px;
+    margin: 15px 0;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+ 50% { background-position: 100% 50%; }
+ 100% { background-position: 0% 50%; }
+}
+
+.titulos{
+    color:#ffffff;
+    text-shadow:2px 2px 4px rgba(0, 0,      
+    0,0.5);
+}
+
+h1{
+    font-size:28px;
+    text-align:center;
+    margin:10px 0;
+}
+
+h2{
+    font-size:18px;
+    text-align:center;
+}
+
+/*contenedor de las columnas*/
+div{
+    display:flex;
+    justify-content: space-between;  
+/*arriba:;las pone en extremos 
+opuestos*/
+    width: 100%;
+    gap:20px;
+}
+
+/*columna 1*/
+#ed{
+    font-size:16px;
+    width:37%;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 
+    0, 0.3);
+}
+
+/*columna 2*/
+#datosP{
+    font-size:16px;
+    width:37%;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 
+    0, 0.3);
+}
+
+
+#exp{
+    height:150px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 2px 
+    rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+ .columnas-container {
+    flex-direction: column;
+ }
+                
+ .columna-lateral {
+     width: 100%;
+ }
+                
+ body {
+     margin: 20px;
+ }
+                
+ h1 {
+     font-size: 24px;
+ }
